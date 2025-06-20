@@ -1,0 +1,16 @@
+# Ignore all .log files
+*.log
+C:\Users\Dell\Documents\Visual Studio Code\AI project clause\env\Lib
+# Ignore all files in a folder
+/temp/
+
+# Ignore environment and build files
+env
+__pycache__/
+node_modules/
+
+# Ignore all .pyc files (Python)
+*.pyc
+
+# Ignore VSCode settings folder
+.vscode/

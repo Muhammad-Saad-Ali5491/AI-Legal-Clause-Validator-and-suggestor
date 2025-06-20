@@ -1,6 +1,6 @@
 # Ignore all .log files
 *.log
-C:\Users\Dell\Documents\Visual Studio Code\AI project clause\env\Lib
+env\Lib
 # Ignore all files in a folder
 /temp/
 

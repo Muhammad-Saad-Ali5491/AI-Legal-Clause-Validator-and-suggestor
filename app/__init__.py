@@ -12,14 +12,17 @@ import os
 import spacy
 import google.generativeai as genai
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
+from dotenv import load_dotenv
+import os
 
+load_dotenv() # Load environment variables from .env file
 # Load all models once when the package is imported
 nlp = spacy.load("en_core_web_sm")
 tokenizer = AutoTokenizer.from_pretrained("Anery/legalbert_clause_combined")
 hf_model = AutoModelForSequenceClassification.from_pretrained("Anery/legalbert_clause_combined")
 
 # Load Gemini API key
-genai.configure(api_key=os.getenv("GEMINI_API_KEY", "AIzaSyD9ZaIB9w7wL4UsAhOuBdjNecL6DbP4DOc"))
+genai.configure(api_key=os.getenv("API_KEY"))
 gemini_model = genai.GenerativeModel("gemma-3n-e4b-it")
 
 print("✅ app package initialized with SpaCy, LegalBERT, and Gemini")

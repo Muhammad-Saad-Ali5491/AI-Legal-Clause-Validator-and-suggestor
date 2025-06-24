@@ -6,6 +6,7 @@ env\Lib
 
 # Ignore environment and build files
 env
+.env
 __pycache__/
 node_modules/
 

@@ -78,7 +78,7 @@ Follow these steps to set up the project locally:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-repo/ai-legal-validator.git
+   git clone https://github.com/Muhammad-Saad-Ali5491/AI-Legal-Clause-Validator-and-suggestor.git
    cd ai-legal-validator
    ```
 
